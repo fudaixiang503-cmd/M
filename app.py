@@ -11,7 +11,7 @@ api_key = st.secrets["GOOGLE_API_KEY"]
 
 # 2. 配置 Google AI
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-flash') # 或者你选择的其他模型
+model = genai.GenerativeModel('gemini-pro') # 或者你选择的其他模型
 
 # 3. 创建输入框
 user_input = st.text_input("请输入你的设计需求：", "例如：设计一个位于山顶的现代风格别墅...")
@@ -29,3 +29,4 @@ if st.button("开始生成"):
     else:
 
         st.warning("请先输入内容！")
+
