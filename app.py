@@ -27,4 +27,5 @@ if st.button("开始生成"):
             except Exception as e:
                 st.error(f"发生错误: {e}")
     else:
+
         st.warning("请先输入内容！")
